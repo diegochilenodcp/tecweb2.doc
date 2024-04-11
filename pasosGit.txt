@@ -1,2 +1,30 @@
-Hola voy a realizar un cambio
-Antes no habia nada, estaba en blanco mi bloc de notas
+Pasos avanzados en clase de Tecnologia Web II (terminal)
+*# INSTALAR APACHE2
+$ sudo apt update
+$ sudo apt install apache2
+
+*# IMPLEMENTAR PHP
+$ sudo apt update
+$ sudo apt install php php-cli php-comon php-mysql
+$ php --version
+
+*# INSTALAR VISUAL CODE
+	Descargar de la pagina web compatible con ubuntu
+*# ACTUALIZAR SISTEMA UBUNTU
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt upgrade -y
+	Una vez descargado ingresamos al directorio "Download"
+	y desde la terminal ingresamos a dicho directorio
+	$ cd Download/
+	$ sudo apt-get install -f
+	$ sudo dpkg -i "nombre del archivo instalador.debian"
+
+*# CONFIGURAR EL TECLADO Y IDIOMA A ESPAÑOL DEL SISTEMA
+$ sudo dpkg-reconfigure locales
+En la configuracion del teclado seleccionar español (latinoamerica)
+
+*# INSTALAR PROGRAMA PARA GUARDAR DE FORMA SEGURA NUESTRO TOKEN
+$ sudo apt install keepassxc
+
+*# CREAMOS CUENTA DE HITHUB Y CREAMOS UN REPOSITORIO
