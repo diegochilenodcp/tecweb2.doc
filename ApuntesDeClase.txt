@@ -1,0 +1,54 @@
+Pasos avanzados en clase de Tecnologia Web II (terminal)
+*# INSTALAR APACHE2
+$ sudo apt update
+$ sudo apt install apache2
+
+*# IMPLEMENTAR PHP
+$ sudo apt update
+$ sudo apt install php php-cli php-comon php-mysql
+$ php --version
+
+*# INSTALAR VISUAL CODE
+	Descargar de la pagina web compatible con ubuntu
+*# ACTUALIZAR SISTEMA UBUNTU
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt upgrade -y
+	Una vez descargado ingresamos al directorio "Download"
+	y desde la terminal ingresamos a dicho directorio
+	$ cd Download/
+	$ sudo apt-get install -f
+	$ sudo dpkg -i "nombre del archivo instalador.debian"
+
+*# CONFIGURAR EL TECLADO Y IDIOMA A ESPAÑOL DEL SISTEMA
+$ sudo dpkg-reconfigure locales
+En la configuracion del teclado seleccionar español (latinoamerica)
+
+*# INSTALAR PROGRAMA PARA GUARDAR DE FORMA SEGURA NUESTRO TOKEN
+$ sudo apt install keepassxc
+
+*# CREAMOS CUENTA DE HITHUB Y CREAMOS UN REPOSITORIO
+
+*# INSTALAMOS GIT
+$ sudo apt update
+$ sudo apt install git
+
+*# AGREGAMOS USUARIO Y CORREO DE GITHUB EN LINEA
+$ git config --global user.email "diegochileno3112@gmail.com"
+$ git config --global user.name "diegochilenodcp"
+
+*# EN EL CASO QUE YA TENGAMOS UN REPOSITORIO CREADO EN GITHUB, CLONAMOS EL REPOSITORIO EN NUESTRA SISTEMA LOCAL
+$ git clone hhtp://github.com/diegochilenodcp/tecweb2.doc.git
+
+*# SI ES UN REPOSITORIO NUEVO AGREGAR ARCHIVO OCULTO
+$ GIT INIT
+
+*# INGRESAMOS A LA CARPETA DE NUESTRO REPOSITORIO CLONADA, UN VEZ DENTRO.
+
+*# VERIFICAMOS CUAL ES NUESTRA RAMA "MAIN O MASTER"
+	$git branch
+*# DESPUES DE VERIFICAR, SUBIMOS NUESTRO ARCHIVO A GITHUB
+$ git add "pasosGit.txt"
+$ git commit -m "Agregue mas cosas"
+$ git push origin main
+
