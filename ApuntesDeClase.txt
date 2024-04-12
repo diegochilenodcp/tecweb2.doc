@@ -95,6 +95,45 @@ $ sudo mousepad code/index.html
 
 *# INGESAMOS ETIQUETA DE PRUEBA HTML
 
+*# LO MISMO PERO AHORA CON PHP
+
+*# CREAMOS UNA CARPETA DENTRO DE "DOCKER" Y OTRA SUBCARPETA "PHP"
+
+*# DENTRO DE LA CARPETA "PHP" CREAR UN DOCUMENTO "DOCKER-COMPOSE.YML"
+version: '3.8'
+
+services:
+  # Apache and PHP service
+  web:
+    image: php:8-apache
+    container_name: php-apache-container
+    ports:
+      - "8090:80"
+    volumes:
+      - ./html:/var/www/html
+# Define networks
+networks:
+  my-network:
+
+*# UTILIZAMOS EL SIGUIENTE COMANDO PARA HABILITAR LA CARPETA "HTML"
+$ docker compose up -d
+
+*# DENTRO DE LA CARPETA "HTML" CREMOS UN ARCHIVO.PHP
+
+*# EN EL ARCHIVO AGREGAMOS EL CODIGO
+<?php
+
+// Show all information, defaults to INFO_ALL
+phpinfo();
+
+// Show just the module information.
+// phpinfo(8) yields identical results.
+phpinfo(INFO_MODULES);
+
+?>
+------------DIA 11/04/2024------------------------
+
+
 
 
 
