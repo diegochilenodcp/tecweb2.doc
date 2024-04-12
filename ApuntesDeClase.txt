@@ -38,7 +38,7 @@ $ git config --global user.email "diegochileno3112@gmail.com"
 $ git config --global user.name "diegochilenodcp"
 
 *# EN EL CASO QUE YA TENGAMOS UN REPOSITORIO CREADO EN GITHUB, CLONAMOS EL REPOSITORIO EN NUESTRA SISTEMA LOCAL
-$ git clone hhtp://github.com/diegochilenodcp/tecweb2.doc.git
+$ git clone https://github.com/diegochilenodcp/tecweb2.doc.git
 
 *# SI ES UN REPOSITORIO NUEVO AGREGAR ARCHIVO OCULTO
 $ GIT INIT
@@ -64,3 +64,46 @@ $ sudo systemctl status docker
 $ sudo usermod -aG docker ${USER}
 $ su - ${USER}
 $ docker run hello-world
+
+*# UTILIZANDO DOCKER COMPOSE
+* INGRESAMOS A LA PAGINA WEB https://hub.docker.com/_/nginx
+
+*# INSTALACION DEL PLUGIN
+$ sudo apt install docker-compose-plugin
+
+*# CREAR EL ARCHIVO "DOCKER-COMPOSE.YML" DENTRO DE LA CARPETA "DOCKER" SEGUIDO DE UNA SUBCARPETA "NGINX"
+
+*# CONTENIDO DEL ARCHIVO "DOCKER-COMPOSE.YML"
+version: '3'
+
+services:
+ web:
+  image: nginx
+  volumes:
+   - ./code:/usr/share/nginx/html
+  ports:
+   - "8080:80"
+  environment:
+#   - NGINX_HOST=upds.lan
+   - NGINX_PORT=80
+
+*# EJECUTAMOS EL CONTENEDOR
+$ docker compose up -d
+
+*# CREAMOS UNA PAGINA WEB EN LA RUTA DOCKER/NGINX/CODE/INDEX.HTML
+$ sudo mousepad code/index.html
+
+*# INGESAMOS ETIQUETA DE PRUEBA HTML
+
+
+
+
+
+
+
+
+
+
+
+
+
