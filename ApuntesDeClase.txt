@@ -132,8 +132,30 @@ phpinfo(INFO_MODULES);
 
 ?>
 ------------DIA 11/04/2024------------------------
+------------
+*# NGNIX NO LEE CODIGO PHP SOLO HTML!!!!!
 
+*# COMANDOS EXTRAS PARA GESTIONAR DOCKER
 
+*# LISTADO DE CONTENEDORES GENERADOS POR DOCKER
+$docker compose ps
+
+*# PARA DETENER EL CONTENEDOR
+$docker compose stop
+
+*# PARA INICIAR EL CONTENEDOR
+$docker compose star
+
+*# CAMBIAR PERMISOS Y DUEÑO DE LA CARPETA HTML
+#-- DENTRO DE DOCKER/PHP
+$sudo chmod 777 html/
+
+*#VOLVER A COLOCAR LOS PRIVILEGIOS ROOT. (regresar atras)
+$sudo chown -R root:root html/
+
+*#INSTALAR PHP-CLI
+$sudo apt update
+$sudo apt install php-cli
 
 
 
